@@ -31,6 +31,7 @@ public class Encryption
     public static void main(String[] args){
         
         System.out.println("Welcome to the Encryption / Decryption Program");
+        System.out.println("Enter 1 for Encrypt | 2 for Decrypt");
         
     }
     }
