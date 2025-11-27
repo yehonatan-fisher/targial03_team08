@@ -6,6 +6,35 @@
  */
 public class Encryption
 {
+    //Rearrange the sentence
+    //matan
+    public static String newPassword(String password,int wordCount){
+        if (wordCount == 1){
+        }
+        else if (wordCount == 2){
+            String[] parts = password.split(" ");
+            String word1 = parts[0];
+            String word2 = parts[1];
+            password = word2 +" "+ word1;
+        }
+        else{
+            String[] parts = password.split(" ");
+            String word1 = parts[0];
+            String word2 = parts[1];
+            String word3 = parts[2];
+            password = word3 +" "+ word1 +" "+ word2;
+        }
+        return password;
+    }
+    
+    //Find how many words are in a sentence and what they are
+    //matan
+    public static int wordsNum(String password){
+        String[] parts = password.split(" ");
+        int wordCount = parts.length;
+        return wordCount;
+    }
+    
     // muli
     public static String replace(String input)// replace from words to signs
     {    
@@ -17,6 +46,7 @@ public class Encryption
         str = str.replace('u','&' );
         return str;
     }
+    
    // muli
     public static String restore (String sentence){ // replace from signs to words
         String str = sentence;
