@@ -18,12 +18,14 @@ public class EncryptionTester
         assertEquals(3,result);
         
     }
+    @Test
     public void testAdd1(){
         
         int result = Encryption.wordsNum("aaa bbb");
         assertEquals(2,result);
         
     }
+    @Test
     public void testAdd2(){
         
         int result = Encryption.wordsNum("aaa");
@@ -31,18 +33,21 @@ public class EncryptionTester
         
     }
     // methods 2 tests (matan)
+    @Test
     public void testAdd3(){
         
         String result = Encryption.newPassword("aaa",1);
         assertEquals("aaa",result);
         
     }
+    @Test
     public void testAdd4(){
         
         String result = Encryption.newPassword("aaa bbb",2);
         assertEquals("bbb aaa",result);
         
     }
+    @Test
     public void testAdd5(){
         
         String result = Encryption.newPassword("aaa bbb ccc",3);
