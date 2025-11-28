@@ -115,7 +115,7 @@ public class EncryptionTester
     public void testAdd14(){//muli
         
         String result = Encryption.replace("im ironman");
-        assertEquals("1m 1r0m@n",result);
+        assertEquals("1m 1r0nm@n",result);
         
     }
         @Test
