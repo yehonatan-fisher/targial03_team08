@@ -76,7 +76,7 @@ public class EncryptionTester
         
     }
     @Test
-    public void testAdd7(){
+    public void testAdd8(){
         
         int result = Encryption.wordsNum("gvjjgv jhvhvj hvhv");
         assertEquals("hvhv gvjjgv jhvhvj",result);
