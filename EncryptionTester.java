@@ -54,4 +54,18 @@ public class EncryptionTester
         assertEquals("ccc aaa bbb",result);
         
     }
+     @Test
+    public void testAdd6(){//muli
+        
+        String result = Encryption.replace("abuigo");
+        assertEquals("@b&1g0",result);
+        
+    }
+    @Test
+    public void testAdd7(){//muli
+        
+        String result = Encryption.restore(""@b&1g0");
+        assertEquals("abuigo",result);
+        
+    }
 }
