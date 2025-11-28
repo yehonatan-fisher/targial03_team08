@@ -58,35 +58,35 @@ public class EncryptionTester
     @Test
     public void testAdd6(){//muli
         
-        String result = Encryption.restore(""@b&1g0");
+        String result = Encryption.restore("@b&1g0");
         assertEquals("abuigo",result);
         
     }
      @Test
     public void testAdd7(){//muli
         
-        String result = Encryption.restore(""@&10");
+        String result = Encryption.restore("@&10");
         assertEquals("auio",result);
         
     }
      @Test
     public void testAdd8(){//muli
         
-        String result = Encryption.restore(""00 11 &&@@");
+        String result = Encryption.restore("00 11 &&@@");
         assertEquals("oo ii uuaa",result);
         
     }
      @Test
     public void testAdd9(){//muli
         
-        String result = Encryption.restore(""00 @@ p0");
+        String result = Encryption.restore("00 @@ p0");
         assertEquals("oo aa po",result);
         
     }
      @Test
     public void testAdd10(){//muli
         
-        String result = Encryption.restore(""o01i@");
+        String result = Encryption.restore("o01i@");
         assertEquals("ooiia",result);
         
     }
