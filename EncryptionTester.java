@@ -19,42 +19,70 @@ public class EncryptionTester
         
     }
     @Test
-    public void testAdd1(){
+    public void testAdd0(){
         
         int result = Encryption.wordsNum("aaa bbb");
         assertEquals(2,result);
         
     }
     @Test
-    public void testAdd2(){
+    public void testAdd1(){
         
         int result = Encryption.wordsNum("aaa");
         assertEquals(1,result);
         
     }
-    // methods 2 tests (matan)
+    @Test
+    public void testAdd2(){
+        
+        int result = Encryption.wordsNum("bfdh");
+        assertEquals(1,result);
+        
+    }
     @Test
     public void testAdd3(){
+        
+        int result = Encryption.wordsNum("fdhdfh dfhdfh");
+        assertEquals(2,result);
+        
+    }
+    // methods 2 tests (matan)
+    @Test
+    public void testAdd4(){
         
         String result = Encryption.newPassword("aaa",1);
         assertEquals("aaa",result);
         
     }
     @Test
-    public void testAdd4(){
+    public void testAdd5(){
         
         String result = Encryption.newPassword("aaa bbb",2);
         assertEquals("bbb aaa",result);
         
     }
     @Test
-    public void testAdd5(){
+    public void testAdd6(){
         
         String result = Encryption.newPassword("aaa bbb ccc",3);
         assertEquals("ccc aaa bbb",result);
         
     }
-     
+    @Test
+    public void testAdd7(){
+        
+        int result = Encryption.wordsNum("dfghd dghg");
+        assertEquals("dghg dfghd",result);
+        
+    }
+    @Test
+    public void testAdd7(){
+        
+        int result = Encryption.wordsNum("gvjjgv jhvhvj hvhv");
+        assertEquals("hvhv gvjjgv jhvhvj",result);
+        
+    }
+    
     @Test
     public void testAdd9(){//muli
         
