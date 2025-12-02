@@ -3,6 +3,26 @@ import java.util.Scanner;
 public class Encryption
 {
     //Rearrange the sentence
+    //Fisher (method 3)
+    public static String oldPassword(String password,int wordCount){
+        if (wordCount == 1){
+        }
+        else if (wordCount == 2){
+            String[] parts = password.split(" ");
+            String word1 = parts[0];
+            String word2 = parts[1];
+            password = word2 +" "+ word1;
+        }
+        else{
+            String[] parts = password.split(" ");
+            String word1 = parts[0];
+            String word2 = parts[1];
+            String word3 = parts[2];
+            password = word2 +" "+ word3 +" "+ word1;
+        }
+        return password;
+    }
+    //Rearrange the sentence
     //matan
     public static String newPassword(String password,int wordCount){
         if (wordCount == 1){
