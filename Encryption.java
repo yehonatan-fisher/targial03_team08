@@ -53,6 +53,30 @@ public class Encryption
         str = str.replace('&','u' );
         return str;
     }
+    // everyone except eitan
+    public static String moveSingsRight(String sentence) {
+        if (sentence.length() <= 1) {
+            return sentence;
+        }
+
+        int len = sentence.length();
+        String lastChar = sentence.substring(len - 1);    
+        String rest = sentence.substring(0, len - 1);   
+
+        return lastChar + rest;
+    }
+
+    //everyone except eitan
+    public static String moveSingsLeft(String sentence) {
+        if (sentence.length() <= 1) {
+            return sentence; 
+        }
+
+        String firstChar = sentence.substring(0, 1);    
+        String rest = sentence.substring(1);             
+
+        return rest + firstChar;
+    }
      //Fisher
     //doing the "if"s so that the code will run right (by order) and checking the inputs
     public static void main(String[] args){
