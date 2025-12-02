@@ -123,6 +123,10 @@ public class Encryption
         System.out.println("Enter 1 for Encrypt | 2 for Decrypt");
         int choice = reader.nextInt();
         reader.nextLine();
+        if (choice != 1 && choice != 2){
+            System.out.println(choice + " is not a valid choice");
+            return;
+        }
         System.out.println("Enter up to 3 words sentence");
         String sentence = reader.nextLine();
         int wordsNum = wordsNum(sentence);
@@ -140,10 +144,5 @@ public class Encryption
             System.out.println("The encrypted sentence: " + finalSentence);
         else if (choice == 2)
             System.out.println("The decrypted sentence: " + firstSentence);
-        else{
-            System.out.println(choice + " is not a valid choice");
-            return;
-        }
-
      }
 }
