@@ -153,5 +153,43 @@ public class EncryptionTester
         assertEquals("D@v1d",result);
         
     }
+    //Fisher
+    //test method 3
+     @Test
+    public void testAdd19(){
+        
+        String result = Encryption.oldPassword("aaa",1);
+        assertEquals("aaa",result);
+        
+    }
+    @Test
+    public void testAdd20(){
+        
+        String result = Encryption.oldPassword("aaa bbb",2);
+        assertEquals("bbb aaa",result);
+        
+    }
+    @Test
+    public void testAdd21(){
+        
+        String result = Encryption.oldPassword("aaa bbb ccc",3);
+        assertEquals("bbb ccc aaa",result);
+        
+    }
+    @Test
+    public void testAdd22(){
+        
+        String result = Encryption.oldPassword("one two",2);
+        assertEquals("two one",result);
+        
+    }
+    @Test
+    public void testAdd23(){
+        
+        String result = Encryption.oldPassword("one two three",3);
+        assertEquals("two three one",result);
+        
+    }
+
     
 }
