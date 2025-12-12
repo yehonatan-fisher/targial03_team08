@@ -3,23 +3,22 @@ public class Encryption
 {
     //Rearrange the sentence
     //Fisher (method 3)
-    public static String oldPassword(String password,int wordCount){
-        if (wordCount == 1){
-        }
-        else if (wordCount == 2){
-            String[] parts = password.split(" ");
-            String word1 = parts[0];
-            String word2 = parts[1];
-            password = word2 +" "+ word1;
-        }
-        else{
-            String[] parts = password.split(" ");
-            String word1 = parts[0];
-            String word2 = parts[1];
-            String word3 = parts[2];
-            password = word2 +" "+ word3 +" "+ word1;
-        }
+    public static String oldPassword(String password, int wordCount) {
+    if (wordCount == 1) {
         return password;
+    }
+    int space1 = password.indexOf(' ');
+    int space2 = password.indexOf(' ', space1 + 1);
+    if (wordCount == 2) {
+        String word1 = password.substring(0, space1);
+        String word2 = password.substring(space1 + 1);
+        return word2 + " " + word1;
+    }
+    String word1 = password.substring(0, space1);
+    String word2 = password.substring(space1 + 1, space2);
+    String word3 = password.substring(space2 + 1);
+
+    return word2 + " " + word3 + " " + word1;
     }
     //Rearrange the sentence
     //matan
